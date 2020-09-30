@@ -1,4 +1,4 @@
-<img src="https://alfred.is-inside.me/ruHnm24b.png" />
+# Ey! Welcome to Portfolio
 
 # Welcome to our new Network and yes Re-designed!
 
