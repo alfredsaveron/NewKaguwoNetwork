@@ -486,16 +486,3 @@ button::before {
 ::-webkit-scrollbar-thumb:hover {
   background: #99AAB5;
 }
-
-section {
-  margin-top: 80px;
-}
-
-.announcement-top-bar {
-  position: -webkit-sticky;
-  position: -moz-sticky;
-  position: -ms-sticky;
-  position: -o-sticky;
-  position: sticky;
-  top: 0;
-}
