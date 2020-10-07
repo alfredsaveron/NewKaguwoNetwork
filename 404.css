@@ -8,6 +8,7 @@ body {
 .error-page {
   height: 100%;
   display: flex;
+  background: #23272a;
   align-items: center;
   justify-content: center;
   text-align: center;
