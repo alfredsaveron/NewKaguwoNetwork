@@ -8,7 +8,6 @@ body {
 .error-page {
   height: 100%;
   display: flex;
-  background: #23272a;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -33,13 +32,13 @@ body {
   background: rgb(113, 183, 230);
   background: linear-gradient(
     -45deg,
-    rgba(56, 43, 0, 0) 0%,
-    rgba(42, 26, 23, 0) 15%,
-    rgba(56, 43, 0, 0) 31%,
-    rgba(42, 26, 23, 0) 48%,
-    rgba(56, 43, 0, 0) 65%,
-    rgba(42, 26, 23, 0) 85%,
-    rgba(56, 43, 0, 0) 100%
+    rgba(113, 183, 290, 1) 0%,
+    rgba(105, 166, 270, 1) 15%,
+    rgba(185, 238, 254, 1) 31%,
+    rgba(238, 129, 128, 1) 48%,
+    rgba(185, 138, 172, 1) 65%,
+    rgba(105, 226, 206, 1) 85%,
+    rgba(155, 289, 282, 1) 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
