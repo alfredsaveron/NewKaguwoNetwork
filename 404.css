@@ -37,9 +37,9 @@ body {
     rgba(105, 166, 206, 1) 15%,
     rgba(185, 138, 204, 1) 31%,
     rgba(238, 129, 118, 1) 48%,
-    rgba(185, 138, 172, 1) 65%,
-    rgba(105, 166, 206, 1) 85%,
-    rgba(155, 89, 182, 1) 100%
+    rgba(0, 0, 0, 100) 65%,
+    rgba(42, 26, 23, 0) 85%,
+    rgba(56, 43, 0, 0) 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
