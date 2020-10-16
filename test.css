@@ -1,0 +1,364 @@
+/* colors */
+:root {
+  --nuetral:#FFFFFF;
+  --dark: #000000;
+  --grey:#8e8e93;
+  --touch:#007aff;
+  --bright:#5ac8fa;
+  --hue:#4cd964;
+  --balance:#4cd964;
+  --punch:#ff3b30;
+}
+
+/* mains */
+body {
+  font-family: 'Helvetica Neue' !important;
+  font-weight: 300;
+  font-size: 20px;
+  color: var(--dark);
+  min-width: 320px;
+}
+
+header, main, footer {
+  width: 100vw;
+}
+
+/* Banners */
+
+.row {
+  text-align: center;
+}
+
+.banner {
+  padding: 1vw;
+  width: 100%;
+  text-align: left;
+}
+
+/* left */
+
+.left {
+  text-align: center;
+  position: relative;
+  margin-top: 20vh;
+}
+
+.profile {
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid var(--grey);
+  margin-bottom: 20px;
+}
+
+.left p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.username {
+  color: var(--touch);
+  font-size: 80%;
+}
+
+.social {
+  margin-top: 15px;
+}
+
+.social a {
+  color: var(--dark);
+  position: relative;
+  z-index: 80;
+  display: inline-block;
+  font-size: 25px;
+  text-align: center;
+  line-height: 50px;
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  outline-offset: -25px;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.social a:before {
+  position: absolute;
+  z-index: -1;
+  top: 25px;
+  left: 25px;
+  display: block;
+  content: "";
+  width: 0px; height: 0px;
+  background-color: black;
+  border-radius: 50%;
+  transition: all .2s ease;
+}
+
+.social a:hover {
+  color: white;
+}
+
+.social a:hover:before {
+    /*background-color: var(--bright);*/
+    width: 50px; height: 50px;
+    top: 0px;
+    left: 0px;
+}
+
+/* social media icons */
+
+.steam:hover:before { background-color:#14216c; }
+
+.codepen:hover:before { background-color:#000000; }
+
+.so:hover:before { background-color:#ff8c00; }
+
+.github:hover:before { background-color:#3366cc; }
+
+/* right */
+
+.right {
+  margin-top: 10vh;
+}
+
+/* hr */
+hr {
+  border: 0px;
+  height: 4px;
+  width: 100vw !important;
+  position: absolute;
+  margin: 0px;  padding: 0px;
+  top: 0px;
+  left: 0px;
+
+  background-color: var(--balance);
+}
+
+/* lists */
+ul.list {
+  list-style: none;
+  border-radius: 10px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  padding-left: 0px;
+  background-color: rgb(250,250,250);
+  margin-bottom: 50px;
+}
+
+ul.list li {
+  border-top: 5px solid var(--nuetral);
+  position: relative;
+  min-height: 120px;
+  margin-bottom: -10px;
+}
+
+ul.list li.title {
+  min-height: 10px;
+  padding: 20px;
+  font-weight: bold;
+  border-radius: 39px;
+  font-size: 120%;
+  color: white;
+  margin-bottom: 0px;
+  height: 75px;
+}
+
+ul.list li:nth-child(1), #tweets li:nth-child(2){
+  border: none;
+}
+
+/* github */
+
+#github li.title {
+   background-color: black;
+}
+
+#github a {
+  color: black;
+}
+
+#github li {
+  padding-bottom: 30px;
+}
+
+#github .project {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+#github .description {
+  font-size: 90%;
+  margin-left: 25px;
+}
+
+#github .updated {
+  font-size: 70%;
+  position: absolute;
+  font-weight: bold;
+  right: 20px;
+  bottom: 15px;
+}
+
+#github .stats {
+  margin: 0px;
+  margin-left: 25px;
+  font-weight: bold;
+  font-size: 70%;
+}
+
+#github .stats p {
+  margin: 0px;
+}
+
+#github .stats a {
+  font-weight: 300;
+}
+
+#github .owner:before {
+  content:"Owner: ";
+}
+
+#github .language:before {
+  content:"Language: ";
+}
+
+#github .repo:before {
+  content:"Links: ";
+}
+
+#github .repo a {
+  border-radius: 5px;
+  border: 1px solid var(--grey);
+  font-size: 12px;
+  padding: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-decoration: none;
+}
+
+#github .repo a:hover {
+  background-color: var(--nuetral);
+}
+
+
+/* twitter */
+
+#tweets a {
+color: #00aced !important;
+}
+
+#tweets li.title {
+   background-color: #00aced;
+}
+
+#tweets .user {
+  margin-top: 10px;
+}
+
+#tweets .user a {
+  text-decoration: none !important;
+}
+
+#tweets .user img {
+  height: 50px;
+  border-radius: 50%;
+  float: left;
+  margin: 20px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+#tweets .user span:nth-child(2) {
+  color: black;
+  font-weight: bold;
+}
+
+#tweets .user span:nth-child(3) {
+  font-size: 70%;
+  position: relative;
+  top: -2px;
+}
+
+#tweets .user span:nth-child(3):hover {
+  text-decoration: underline !important;
+}
+
+#tweets li .tweet {
+  padding: 20px;
+  padding-bottom: 30px;
+  padding-top: 0px;
+  margin-left: 72px;
+}
+
+#tweets li .timePosted {
+  font-size: 70%;
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+  margin: 0px;
+}
+
+#tweets li .interact {
+  font-size: 70%;
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+  margin: 0px;
+}
+
+#tweets li .interact a {
+  text-decoration: none !important;
+  margin-right: 3px;
+}
+
+/* commercial projects */
+#commercial li {
+  padding-bottom: 25px;
+}
+
+#commercial li.title {
+   background-color: #990099;
+}
+
+#commercial .project {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+#commercial .project a {
+  color: black;
+}
+
+#commercial .description {
+  font-size: 90%;
+  margin-left: 25px;
+}
+
+#commercial .stats p {
+  font-size: 70%;
+  font-weight: bold;
+  position: absolute;
+  margin: 0px;
+  bottom: 15px;
+  color: #990099;
+}
+
+#commercial .stats .date {
+  right: 20px;
+}
+
+#commercial .stats .company {
+  left: 20px;
+}
+
+#commercial .stats .company a {
+  color: #990099;
+}
