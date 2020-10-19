@@ -448,3 +448,23 @@ img{
     right: 10%;
   }
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #23272A;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7289da;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #99AAB5;
+}
