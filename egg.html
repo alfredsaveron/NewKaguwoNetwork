@@ -1,0 +1,239 @@
+<html>
+<div class="player">
+  <div class="visor"></div>
+  <div class="backpack"></div>
+  <div class="leg back"></div>
+  <div class="leg front"></div>
+  <div class="shade"></div>
+</div>
+<div class="player dead">
+  <div class="visor"></div>
+  <div class="backpack"></div>
+  <div class="leg back"></div>
+  <div class="leg front"></div>
+  <div class="shade"></div>
+</div>
+<div class="player facing-left">
+  <div class="visor"></div>
+  <div class="backpack"></div>
+  <div class="leg back"></div>
+  <div class="leg front"></div>
+  <div class="shade"></div>
+</div>
+
+<style>
+html, body { height: 100% }
+
+body {
+  display: flex;
+  align-items: center; 
+  justify-content: space-around;
+background: #262626;
+}
+
+:root {
+  --dark-red: #a82846;
+  --border-black: #222;
+  --bone: #ededed;
+  --bone-shade: #bbb;
+}
+
+.player {
+  position: relative;
+  background-color: red;
+  height: 120px;
+  width: 100px;
+  border-radius: 45px 60px 45px 0;
+  border: 4px solid  var(--border-black);
+  box-shadow: inset 20px -20px 0 var(--dark-red),
+    inset 1px -20px 0  var(--dark-red);
+}
+
+.player::before {
+  content: "";
+  display:block;
+  height: 120px;
+  width: 100px;
+  border-radius: 45px 60px 45px 40%;
+  box-shadow: inset 20px -20px 0  var(--dark-red),
+    inset 1px -20px 0 var(--dark-red);
+}
+
+.player::after {
+  content: "";
+  display:block;
+  position: absolute;
+  bottom: -4px;
+  left: 40px;
+  height: 10px;
+  width: 20px;
+  border-bottom: 4px solid  var(--border-black);
+  border-bottom-right-radius: 10px 40%;
+  box-shadow: inset 20px -20px 0 var(--dark-red),
+    inset 1px -20px 0 var(--dark-red);
+}
+
+.player .visor {
+  position: absolute;
+  top: 10px;
+  right: -10px;
+  background-color: #00ffff;
+  width: 70%;
+  height: 50px;
+  border: 4px solid var(--border-black);
+  border-radius: 30px 50% 40% 40%;
+  box-shadow: inset 10px -10px 0 #149696, inset 1px -10px 0 #149696;
+}
+
+.player .visor::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 15px;
+  background-color: rgba(255,255,255,0.8);
+  margin: 5px 0 0 30px;
+  border-radius: 40% 50% 40% 40%;
+}
+
+.player .backpack {
+  position: absolute;
+  right: calc(100% + 4px);
+  top: 40px;
+  background-color: red;
+  height: 50px;
+  width: 20px;
+  border-radius: 30% 0 0 30%;
+  border: 4px solid var(--border-black);
+  border-right: none;
+  box-shadow: inset 2px -40px 0  var(--dark-red);
+}
+
+.player .leg {
+  position: absolute;
+  top: 100%;
+  background-color: #a82846;
+  left: -4px;
+  height: 30px;
+  width: 40px;
+  border-radius: 0 0 40% 40%;
+  border: 4px solid var(--border-black);
+  border-top: none;
+}
+
+.player .leg.front {
+  left: 45px;
+}
+
+.player .leg.front::before {
+  content: "";
+  display: block;
+  background-color: var(--dark-red);
+  position: absolute;
+  bottom: 100%;
+  height: 13px;
+  width: 100%;
+  border-right: 4px solid  var(--border-black);
+}
+
+.shade {
+  height: 30px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,0.2);
+  margin-top: 12px;
+  margin-left: -15px;
+}
+
+.player.facing-left {
+  transform: scaleX(-1);
+}
+
+.player.dead {
+  margin-top: 100px;
+  height: 80px;
+  border-radius: 50% 40% 40% 60%;
+  background-color:  var(--dark-red);
+}
+
+.player.dead .visor {
+  left: 10px;
+  box-shadow:none;
+  background-color: #555;
+  border-radius: 50% 40% 40% 60%;
+}
+
+.player.dead .leg {
+  width: 70px;
+  height: 40px;
+  border-radius: 60% 40%;
+  border: 4px solid var(--border-black);
+  top: -20px;
+  z-index: -1;
+}
+
+.player.dead .backpack {
+  background: var(--bone);
+  box-shadow: inset -5px 0 0  var(--bone-shade);
+  border: 4px solid  var(--border-black);
+  border-radius: 10px 10px 0 0;
+  width: 15px;
+  height: 30px;
+  left: 30px;
+  top: 25px;
+  transform: rotate(60deg);
+}
+
+.player.dead .backpack::before, .player.dead .backpack::after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 30px;
+  background:  var(--bone);
+  border-radius: 40%;
+  border: 4px solid  var(--border-black);
+  border-right: none;
+  margin-left: -20px;
+  margin-top: 15px;
+  transform: rotate(-30deg);
+  box-shadow: inset 0 -5px 0  var(--bone-shade);
+}
+
+.player.dead .backpack::after {
+  margin-left: 0px;
+  margin-top: -35px;
+  border: 4px solid  var(--border-black);
+  border-left: none;
+  transform: rotate(40deg);
+  box-shadow: inset -5px 0 0  var(--bone-shade);
+
+}
+
+.player.dead .leg.back {
+  left: 30px;
+  top: -30px;
+  background: red;
+  box-shadow: inset 1px -20px 0 var(--dark-red);
+}
+
+.player.dead .leg.front {
+  left: 60px;
+  top: 0px;
+  transform: rotate(-20deg);
+  box-shadow: inset 1px -10px 0 var(--dark-red);
+}
+
+.player.dead .shade {
+  margin: 0 0 20px 0;
+  position: relative;
+  z-index: -2;
+}
+
+.player.dead::before {
+  height: 60px;
+}
+
+.player.dead::before, .player.dead::after, .player.dead .leg.front::before, .player.dead .visor::before {
+  visibility: hidden;
+}
+</style>
+</html>
