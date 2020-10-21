@@ -49,8 +49,8 @@ body {
   animation-fill-mode: both;
   position: relative;
   border-radius: 10px;
-  box-shadow: 0 25px 45px -20px #99AAB5,
-    inset 0 0px 120px #99AAB5;
+  box-shadow: 0 25px 45px -20px #262626,
+    inset 0 0px 120px #262626;
   width: 45%;
   flex: none;
   background-size: cover;
