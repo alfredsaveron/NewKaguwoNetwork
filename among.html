@@ -1,263 +1,260 @@
 <html>
-<head>
-<title>Ssssh!</title>
-<link rel="icon" href="https://discordapp.com/assets/2cc6266229c7e2ccfde10e81782e8b5c.svg" />
-  </head>
-<div class="player">
-  <div class="visor"></div>
-  <div class="backpack"></div>
-  <div class="leg back"></div>
-  <div class="leg front"></div>
-  <div class="shade"></div>
-</div>
-<div class="player dead">
-  <div class="visor"></div>
-  <div class="backpack"></div>
-  <div class="leg back"></div>
-  <div class="leg front"></div>
-  <div class="shade"></div>
-</div>
-<div class="player facing-left">
-  <div class="visor"></div>
-  <div class="backpack"></div>
-  <div class="leg back"></div>
-  <div class="leg front"></div>
-  <div class="shade"></div>
-</div>
+<sky>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+  <star></star>
+</sky>
 
+<h1><span>A</span><span>l</span><span>f</span><span></span><span class="w"> </span><span>w</span><span>a</span><span>s</span><span class="w"> </span><span>e</span><span>j</span><span>e</span><span>c</span><span>t</span><span>e</span><span>d</span><span>.</span></h1>
+
+<boi>
+  <rightleg></rightleg>
+  <leftleg></leftleg>
+  <backpack></backpack>
+  <belly></belly>
+  <eye></eye>
+  <leftleg></leftleg>
+</boi>
+
+<svg xmlns="http://www.w3.org/2000/svg">
+  <filter id="inset" x="-50%" y="-50%" width="200%" height="200%">
+    <feFlood flood-color="black" result="outside-color"/>
+    <feMorphology in="SourceAlpha" operator="dilate" radius="3.5"/>
+    <feComposite in="outside-color" operator="in" result="outside-stroke"/>
+    <feFlood flood-color="#0c9fc4" result="inside-color"/>
+    <feComposite in2="SourceAlpha" operator="in" result="inside-stroke"/>
+    <feMerge>
+      <feMergeNode in="outside-stroke"/>
+      <feMergeNode in="inside-stroke"/>
+    </feMerge>
+  </filter>
+</svg>
 <style>
-html, body { height: 100% }
-
 body {
-  display: flex;
-  align-items: center; 
-  justify-content: space-around;
-background: #262626;
+  margin: 0;
+  overflow: hidden;
 }
 
-:root {
-  --dark-red: #a82846;
-  --border-black: #222;
-  --bone: #ededed;
-  --bone-shade: #bbb;
-}
-
-.player {
-  position: relative;
-  background-color: red;
-  height: 120px;
-  width: 100px;
-  border-radius: 45px 60px 45px 0;
-  border: 4px solid  var(--border-black);
-  box-shadow: inset 20px -20px 0 var(--dark-red),
-    inset 1px -20px 0  var(--dark-red);
-}
-
-.player::before {
-  content: "";
-  display:block;
-  height: 120px;
-  width: 100px;
-  border-radius: 45px 60px 45px 40%;
-  box-shadow: inset 20px -20px 0  var(--dark-red),
-    inset 1px -20px 0 var(--dark-red);
-}
-
-.player::after {
-  content: "";
-  display:block;
-  position: absolute;
-  bottom: -4px;
-  left: 40px;
-  height: 10px;
-  width: 20px;
-  border-bottom: 4px solid  var(--border-black);
-  border-bottom-right-radius: 10px 40%;
-  box-shadow: inset 20px -20px 0 var(--dark-red),
-    inset 1px -20px 0 var(--dark-red);
-}
-
-.player .visor {
-  position: absolute;
-  top: 10px;
-  right: -10px;
-  background-color: #00ffff;
-  width: 70%;
-  height: 50px;
-  border: 4px solid var(--border-black);
-  border-radius: 30px 50% 40% 40%;
-  box-shadow: inset 10px -10px 0 #149696, inset 1px -10px 0 #149696;
-}
-
-.player .visor::before {
-  content: "";
+sky {
   display: block;
-  width: 30px;
-  height: 15px;
-  background-color: rgba(255,255,255,0.8);
-  margin: 5px 0 0 30px;
-  border-radius: 40% 50% 40% 40%;
+  background: #262626;
+  width: 100vw;
+  height: 100vh;
 }
-
-.player .backpack {
-  position: absolute;
-  right: calc(100% + 4px);
-  top: 40px;
-  background-color: red;
-  height: 50px;
-  width: 20px;
-  border-radius: 30% 0 0 30%;
-  border: 4px solid var(--border-black);
-  border-right: none;
-  box-shadow: inset 2px -40px 0  var(--dark-red);
-}
-
-.player .leg {
-  position: absolute;
-  top: 100%;
-  background-color: #a82846;
-  left: -4px;
-  height: 30px;
-  width: 40px;
-  border-radius: 0 0 40% 40%;
-  border: 4px solid var(--border-black);
-  border-top: none;
-}
-
-.player .leg.front {
-  left: 45px;
-}
-
-.player .leg.front::before {
-  content: "";
-  display: block;
-  background-color: var(--dark-red);
-  position: absolute;
-  bottom: 100%;
-  height: 13px;
-  width: 100%;
-  border-right: 4px solid  var(--border-black);
-}
-
-.shade {
-  height: 30px;
-  width: 120px;
+star {
   border-radius: 50%;
-  background-color: rgba(0,0,0,0.2);
-  margin-top: 12px;
-  margin-left: -15px;
+  background: #7289da;
+  position: absolute;
+  animation: star linear infinite; 
+  @for $i from 1 through 70 {
+    &:nth-child(#{$i}) {
+      $size: random(7) + 3px;
+      width: $size;
+      height: $size;
+      animation-duration: random(30) + 15s;
+      animation-delay: random(40) - 40s;
+      top: random(101) - 1vh;
+    }
+  }
+}
+@keyframes star {
+  from { transform: translate3d(-100%, 0, 1px); }
+  to { transform: translate3d(100vw, 0, 1px); }
 }
 
-.player.facing-left {
-  transform: scaleX(-1);
+boi {
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  animation: eject 5s infinite linear;
+  transform-origin: 13vmin 25vmin;
+  transform: translate3d(-50vmin, -20vmin, 0px) rotate(0turn);
 }
 
-.player.dead {
-  margin-top: 100px;
-  height: 80px;
-  border-radius: 50% 40% 40% 60%;
-  background-color:  var(--dark-red);
+@keyframes eject {
+  0% {
+    transform: translate3d(-50vmin, -20vmin, 0px) rotate(0turn);
+  }
+  50%, 100% {
+    transform: translate3d(100vw, -20vmin, 0px) rotate(-2turn);
+  }
 }
 
-.player.dead .visor {
-  left: 10px;
-  box-shadow:none;
-  background-color: #555;
-  border-radius: 50% 40% 40% 60%;
+eye {
+  position: absolute;
+  left: 13vmin;
+  top: 9vmin;
+  border: 6px solid black;
+  width: 10vmin;
+  height: 11vmin;
+  border-radius: 26vmin;
+  transform: rotate(18deg) scale(1, 0.5);
+  border-top-width: 12px;
+  border-bottom-width: 12px;
+  background: radial-gradient(ellipse at 31% 20%, #262626 15%, #fff0 20%), radial-gradient(ellipse at 50% 40%, #262626 65%, #fff0 70%), radial-gradient(ellipse at 60% 30%, #262626 100%, #fff0 100%);
+  background-size: 140% 100%, 96% 80%, 100% 100%;
+  background-repeat: no-repeat;
 }
 
-.player.dead .leg {
-  width: 70px;
-  height: 40px;
-  border-radius: 60% 40%;
-  border: 4px solid var(--border-black);
-  top: -20px;
-  z-index: -1;
+belly {
+  position: absolute;
+  width: 15vmin;
+  height: 25vmin;
+  background: #7289da radial-gradient(ellipse at 42% 33%, #7289da 50%, #fff0 52%);
+  border-radius: 10vmin;
+  top: 7vmin;
+  left: 6vmin;
+  transform: rotate(10deg);
+  background-size: 140% 114%;
+  border: 7px solid black;
 }
 
-.player.dead .backpack {
-  background: var(--bone);
-  box-shadow: inset -5px 0 0  var(--bone-shade);
-  border: 4px solid  var(--border-black);
-  border-radius: 10px 10px 0 0;
-  width: 15px;
-  height: 30px;
-  left: 30px;
-  top: 25px;
-  transform: rotate(60deg);
+backpack {
+  position: absolute;
+  left: 1.2vmin;
+  top: 14vmin;
+  background: #7289da;
+  width: 7vmin;
+  height: 11vmin;
+  border-radius: 3vmin;
+  transform: rotate(7deg);
+  border: 7px solid black;
 }
 
-.player.dead .backpack::before, .player.dead .backpack::after {
-  content: "";
-  display: block;
-  width: 25px;
-  height: 30px;
-  background:  var(--bone);
-  border-radius: 40%;
-  border: 4px solid  var(--border-black);
-  border-right: none;
-  margin-left: -20px;
-  margin-top: 15px;
-  transform: rotate(-30deg);
-  box-shadow: inset 0 -5px 0  var(--bone-shade);
+leftleg {
+  position: absolute;
+  left: 1vmin;
+  top: 25vmin;
+  width: 11vmin;
+  height: 11vmin;
+  background: radial-gradient(ellipse at 20% 70%, #7289da 15%, #fff0 15%), radial-gradient(ellipse at 0% 29%, #fff0 40%, #7289da 40%);
+  background-repeat: no-repeat;
+  border-radius: 20vmin;
+  background-size: 150% 96%, 100% 100%;
+  &:not(:nth-child(2)) {
+    clip-path: polygon(-10% 110%, 100% 110%, 110% 60%, 70% 20%, -5% 30%);
+  }
+  &:nth-child(2) {
+    filter: url(#inset);
+  }
 }
 
-.player.dead .backpack::after {
-  margin-left: 0px;
-  margin-top: -35px;
-  border: 4px solid  var(--border-black);
-  border-left: none;
-  transform: rotate(40deg);
-  box-shadow: inset -5px 0 0  var(--bone-shade);
-
+rightleg {
+  position: absolute;
+  left: 4vmin;
+  top: 28vmin;
+  width: 11vmin;
+  height: 11vmin;
+  background: radial-gradient(ellipse at 20% 70%, #7289da 15%, #fff0 15%), radial-gradient(ellipse at 0% 29%, #fff0 40%, #7289da 40%);
+  background-repeat: no-repeat;
+  border-radius: 20vmin;
+  background-size: 150% 96%, 100% 100%;
+  filter: url(#inset);
 }
 
-.player.dead .leg.back {
-  left: 30px;
-  top: -30px;
-  background: red;
-  box-shadow: inset 1px -20px 0 var(--dark-red);
+h1 {
+  position: absolute;
+  color: white;
+  font-family: arial, sans-serif;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  transform: translateY(-50%);
+  @media (min-width: 600px) {
+    font-size: 30px;
+  }
 }
-
-.player.dead .leg.front {
-  left: 60px;
-  top: 0px;
-  transform: rotate(-20deg);
-  box-shadow: inset 1px -10px 0 var(--dark-red);
+span {
+  display: inline-block;
+  &.w { display: inline; }
+  @for $i from 1 through 17 {
+    &:nth-child(#{$i}) {
+      animation: type#{$i} 5s infinite linear both;
+      @keyframes type#{$i} {
+        0%, #{$i * 1.5 + 20}% {
+          width: 0px;
+          opacity: 0;
+        }
+        #{$i * 1.5 + 20.5}%, 90% {
+          width: auto;
+          opacity: 1;
+        }
+        95%, 100% {
+          opacity: 0;
+        }
+      }
+    }
+  }
 }
-
-.player.dead .shade {
-  margin: 0 0 20px 0;
-  position: relative;
-  z-index: -2;
-}
-
-.player.dead::before {
-  height: 60px;
-}
-
-.player.dead::before, .player.dead::after, .player.dead .leg.front::before, .player.dead .visor::before {
-  visibility: hidden;
-}
-
-/* width */
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #262626;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #262626;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #262626;
-}
-</style>
+  </style>
 </html>
