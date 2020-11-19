@@ -1,0 +1,97 @@
+<div id="desktop">
+            <div class="icon launchpad" data-application="finder">Finder</div>
+            <div class="icon terminal" data-application="terminal">Terminal</div>
+            <div class="icon textedit" data-application="textedit">TextEdit</div>
+            <ul class="contextmenu hidden">
+                <li class="rename">Rename</li>
+            </ul>
+        </div>
+
+        <template id="finder">
+            <section class="window finder" data-application="finder" data-title="Finder">
+                <header>
+                    <span class="action close"></span>
+                    <span class="action minimize"></span>
+                    <span class="action maximize"></span>
+                    <div class="action-bar">
+                        <div class="button-group">
+                            <span class="action-button back" data-icon="back"></span>
+                            <span class="action-button forward" data-icon="forward"></span>
+                        </div>
+                        <input type="text" name="path">
+                        <input type="text" name="search" placeholder="Search">
+                        <div class="button-group">
+                            <span class="action-button folder" data-icon="folder"></span>
+                            <span class="action-button file" data-icon="file"></span>
+                        </div>
+                    </div>
+                </header>
+                <aside>
+                    <section>
+                        <h1>Favorites</h1>
+                        <ul class="favorites">
+                            <li>Documents</li>
+                            <li>Pictures</li>
+                            <li>Music</li>
+                            <li>Videos</li>
+                        </ul>
+                    </section>
+                </aside>
+                <main></main>
+            </section>
+        </template>
+        <template id="terminal">
+            <section class="window terminal" data-application="terminal" data-title="Terminal">
+                <header>
+                    <span class="action close"></span>
+                    <span class="action minimize"></span>
+                    <span class="action maximize"></span>
+                </header>
+                <main>
+                    <div class="contents">
+                        <div class="prompt">
+                            <span>/</span>
+                            <textarea class="autosize" data-capture-enter="true" spellcheck="off"></textarea>
+                        </div>
+                    </div>
+                </main>
+            </section>
+        </template>
+        <template id="textedit">
+            <section class="window textedit" data-application="textedit" data-title="TextEdit - Untitled">
+                <header>
+                    <span class="action close"></span>
+                    <span class="action minimize"></span>
+                    <span class="action maximize"></span>
+                </header>
+                <main>
+                    <textarea spellcheck="off"></textarea>
+                </main>
+            </section>
+        </template>
+        <template id="alert">
+            <section class="window alert focused">
+                <header>
+                    <span class="action close"></span>
+                </header>
+                <main>
+                    <h4>Error</h4>
+                    <p>The error message gets here.</p>
+                </main>
+            </section>
+        </template>
+        <template id="filebrowser">
+            <section class="window filebrowser" data-title="">
+                <header>
+                    <span class="action close"></span>
+                </header>
+                <main>
+                    <ul></ul>
+                    <div class="file-info clearfix">
+                        <label>Filename:</label>
+                        <input type="text" name="filename">
+                        <span class="action-button" data-icon="check"></span>
+                    </div>
+                </main>
+            </section>
+        </template>
