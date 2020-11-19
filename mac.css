@@ -1,0 +1,598 @@
+/** CORE STYLES **/
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Consolas", monospace;
+}
+
+#desktop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("http://cdn.arnellebalane.com/images/virtual-filesystem/wallpaper.png");
+    background-size: cover;
+    cursor: default;
+    overflow: hidden;
+}
+
+
+
+/** BASE ELEMENT STYLES **/
+input {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 28px;
+    height: 22px;
+    font: normal 1.2rem "Consolas", monospace;
+    color: #999999;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    padding: 0 5px;
+    box-shadow: 0 1px 1px rgba(40, 40, 40, 0.25);
+    outline: none;
+}
+
+input:focus {
+    color: #333333;
+}
+
+
+
+/** UTILITY CLASSES **/
+.hidden {
+    display: none;
+}
+
+.error {
+    box-shadow: 0 0 2px 2px rgba(255, 95, 80, 0.4) !important;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+/** GENERIC WINDOW STYLES **/
+.window {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: 1;
+    width: 700px;
+    height: 400px;
+    border-top: 30px solid #eeeeee;
+    border-radius: 3px;
+    background-color: #ffffff;
+    box-shadow: inset 0 1px 0 rgba(14, 14, 14, 0.3),
+                0 9px 20px 6px rgba(50, 50, 50, 0.5);
+}
+
+.window:before {
+    content: attr(data-title);
+    display: block;
+    font-size: 1.4rem;
+    line-height: 28px;
+    text-align: center;
+    color: #333333;
+    margin-top: -28px;
+}
+
+.window header {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.window .action {
+    float: left;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #cdcdcd;
+    margin: 8px 5px 0 0;
+    cursor: pointer;
+}
+
+.window.focused .action.close {
+    background-color: #ff5f50;
+}
+
+.window.focused .action.minimize {
+    background-color: #fec107;
+}
+
+.window.focused .action.maximize {
+    background-color: #16CF36;
+}
+
+.window main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+}
+
+
+
+/** CUSTOM WINDOW OVERRIDES **/
+.finder header {
+    height: 60px;
+}
+
+.finder .action-bar {
+    width: calc(100% + 10px);
+    height: 30px;
+    font-size: 0;
+    padding: 0 10px;
+    margin: 30px 0 0 -10px;
+    background-color: #eeeeee;
+    box-shadow: 0 1px 0 rgba(14, 14, 14, 0.3);
+}
+
+.finder input[name="path"] {
+    width: calc(100% - 324px);
+    margin-left: 10px;
+}
+
+.finder input[name="search"] {
+    width: 180px;
+    margin: 0 10px;
+}
+
+.finder aside {
+    position: absolute;
+    top: 31px;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    background-color: #eeeeee;
+    border-right: 1px solid #d2d0d5;
+    border-bottom-left-radius: 3px;
+}
+
+.finder aside section {
+    padding: 15px;
+}
+
+.finder aside section h1 {
+    font-size: 1.2rem;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #888888;
+    margin-bottom: 8px;
+}
+
+.finder aside section li {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    list-style: none;
+    font-size: 1.2rem;
+    line-height: 1;
+    color: #333333;
+    cursor: pointer;
+    padding: 4px 15px 2px 15px;
+}
+
+.finder aside section li:hover {
+    color: #ffffff;
+    background-color: #4f8edb;
+}
+
+.finder main {
+    top: 30px;
+    left: auto;
+    width: calc(100% - 200px);
+}
+
+.finder main p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #777777;
+    margin-top: 15px;
+}
+
+.terminal {
+    top: calc(100% - 400px);
+    left: calc(100% - 600px);
+    width: 500px;
+    height: 300px;
+    background-color: #222222;
+}
+
+.terminal main {
+    margin: 7px;
+}
+
+.terminal .contents.overflow {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.terminal p {
+    font-size: 1.2rem;
+    line-height: 1;
+    color: #ffffff;
+    word-break: break-all;
+}
+
+.terminal p.green {
+    color: #16cf36;
+}
+
+.terminal p.yellow {
+    color: #fec107;
+}
+
+.terminal p.red {
+    color: #ff5f50;
+}
+
+.terminal .prompt {
+    position: relative;
+}
+
+.terminal main span {
+    position: absolute;
+    font-size: 1.2rem;
+    line-height: 1;
+    color: #ffffff;
+}
+
+.terminal main span:after {
+    content: " $";
+}
+
+.terminal textarea {
+    display: block;
+    width: 100%;
+    height: 12px;
+    font: normal 1.2rem/1 "Consolas", monospace;
+    text-indent: 26.5px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+    color: #ffffff;
+    background: none;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.terminal textarea[data-capture-enter="false"] {
+    text-indent: 0 !important;
+}
+
+.textedit {
+    top: calc(100% - 350px);
+    left: 250px;
+    width: 400px;
+    height: 300px;
+}
+
+.textedit main {
+    padding: 5px;
+}
+
+.textedit textarea {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font: normal 1.2rem/1 "Consolas", monospace;
+    color: #222222;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.alert {
+    width: 300px;
+    height: auto;
+    z-index: 4;
+}
+
+.alert:before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    background-image: url("http://cdn.arnellebalane.com/images/virtual-filesystem/info.png");
+    opacity: 0.25;
+}
+
+.alert main {
+    position: static;
+    display: block;
+    padding: 20px 0 20px 70px;
+}
+
+.alert h4 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 3px;
+}
+
+.alert p {
+    font-size: 1.2rem;
+    color: #222222;
+}
+
+.filebrowser {
+    width: 350px;
+    height: 250px;
+    z-index: 3;
+}
+
+.filebrowser ul {
+    height: calc(100% - 32px);
+    padding: 10px 0;
+    overflow: auto;
+}
+
+.filebrowser .file-info {
+    padding: 5px 10px;
+    background-color: #eeeeee;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    box-shadow: 0 -1px 0 rgba(14, 14, 14, 0.3);
+}
+
+.filebrowser label {
+    float: left;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    color: #333333;
+    margin-right: 5px;
+}
+
+.filebrowser input {
+    float: left;
+    width: 236px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: 1px;
+}
+
+.filebrowser .action-button {
+    float: left;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+
+/** COMPONENTS STYLES **/
+.icon {
+    display: inline-block;
+    vertical-align: top;
+    width: 75px;
+    height: auto;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1;
+    white-space: pre-wrap;
+    word-break: break-word;
+    color: #222222;
+    background: none;
+    border-radius: 3px;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.icon:before {
+    content: "";
+    display: block;
+    width: 80%;
+    padding: 40% 0;
+    margin: 0 auto 5px auto;
+    background: center center no-repeat;
+    background-size: cover;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.icon.list {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin: 1px 0;
+    border-radius: 0;
+    padding: 4px 10px 2px 30px;
+    position: relative;
+}
+
+.icon.list:nth-of-type(2n) {
+    background-color: #eeeeee;
+}
+
+.icon.list:before {
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    width: 14px;
+    height: 14px;
+    padding: 0;
+    background-image: url("http://cdn.arnellebalane.com/images/virtual-filesystem/folder.png");
+    opacity: 0.5;
+}
+
+.icon.highlighted {
+    color: #ffffff !important;
+    background-color: rgba(119, 170, 219, 1) !important;
+}
+
+.icon.launchpad:before {
+    background-image: url("http://cdn.arnellebalane.com/images/virtual-filesystem/finder.png");
+}
+
+.icon.terminal:before {
+    background-image: url("http://cdn.arnellebalane.com/images/virtual-filesystem/terminal.png");
+}
+
+.icon.textedit:before {
+    background-image: url("http://cdn.arnellebalane.com/images/virtual-filesystem/textedit.png");
+}
+
+.icon.documents:before {
+    background-image: url("http://cdn.arnellebalane.com/images/virtual-filesystem/briefcase.png");
+}
+
+.icon.sublimetext:before {
+    background-image: url("http://cdn.arnellebalane.com/images/virtual-filesystem/file.png");
+}
+
+.icon textarea {
+    display: block;
+    width: 100%;
+    height: 12px;
+    font: normal 1.2rem/1 "Consolas", monospace;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    padding: none;
+    resize: none;
+    outline: none;
+}
+
+.action-button {
+    position: relative;
+    display: inline-block;
+    width: 28px;
+    height: 22px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(40, 40, 40, 0.25);
+    cursor: pointer;
+}
+
+.action-button:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent center center no-repeat;
+    background-size: 80% auto;
+    opacity: 0.5;
+}
+
+.action-button:active,
+.action-button.pressed {
+    top: 1px;
+    background-color: #fafafa;
+    box-shadow: 0 0 1px rgba(40, 40, 40, 0.25);
+}
+
+.action-button.disabled {
+    background-color: #f5f5f5;
+}
+
+.action-button.disabled:active {
+    top: 0;
+    box-shadow: 0 1px 1px rgba(40, 40, 40, 0.25);
+}
+
+.action-button[data-icon="back"]:before {
+    background-image: url("http://cdn.arnellebalane.com/images/virtual-filesystem/back.png");
+}
+
+.action-button[data-icon="forward"]:before {
+    background-image: url("http://cdn.arnellebalane.com/images/virtual-filesystem/forward.png");
+}
+
+.action-button[data-icon="folder"]:before {
+    background-image: url("http://cdn.arnellebalane.com/images/virtual-filesystem/folder.png");
+    background-size: 60% auto;
+}
+
+.action-button[data-icon="file"]:before {
+    background-image: url("http://cdn.arnellebalane.com/images/virtual-filesystem/file-black.png");
+    background-size: 60% auto;
+}
+
+.action-button[data-icon="check"]:before {
+    background-image: url("http://cdn.arnellebalane.com/images/virtual-filesystem/check.png");
+    background-size: 60% auto;
+}
+
+.button-group {
+    display: inline-block;
+    font-size: 0;
+}
+
+.button-group .action-button {
+    margin-right: 1px;
+    border-radius: 0;
+}
+
+.button-group .action-button:first-child {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.button-group .action-button:last-child {
+    margin-right: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.contextmenu {
+    position: absolute;
+    z-index: 2;
+    width: 100px;
+    list-style: none;
+    background-color: #ffffff;
+    font-size: 1.2rem;
+    color: #222222;
+    border-radius: 2px;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 4px 15px 3px rgba(50, 50, 50, 0.5);
+}
+
+.contextmenu li {
+    padding: 5px 10px;
+}
+
+.contextmenu li:hover {
+    color: #ffffff;
+    background-color: #4f8edb;
+}
