@@ -1,0 +1,560 @@
+  
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:site_name" content="Alf's Website">
+  <meta property="og:url" content="https://kaguwo.com">
+  <meta property="og:title" content="Welcome to my own Website!">
+  <meta property="og:description"
+    content="Alf's own network. You can find my own information and other projects in the website. Thanks Kaguwo!">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+
+  <title>Alf's Portfolio - Home</title>
+  <link rel="icon" href="https://cdn.discordapp.com/emojis/755127669003255890.png?v=1" />
+</head>
+
+<body>
+  <div class="global">
+    <img class="animate__pulse" src="https://cdn.discordapp.com/attachments/745937151094423642/765956148292747304/20201014_164052.jpg" />
+    <h3 class="welcome">Hello. Mirai here!</h3>
+    <p class="details1">Front-end Developer - Moderator on <a href="https://kaguwo.com/">Kaguwo's Pub</a> and <a href="https://discordextremelist.xyz/">DEL</a></p>
+    <p class="details2">Mostly using these languages; JavaScript and Python , cool huh?!</p>
+  </div>
+
+  <div class="social-medias">
+    <a class="twitter" href="https://twitter.com/miraichuz"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+    <a class="yt" href="https://www.youtube.com/channel/UC38NMs-vO2E8Wi-b4PfgCiw"><i class="fa fa-youtube-play"
+        aria-hidden="true"></i></a>
+    <a class="reddit" href="https://twitch.tv/miraichuz">
+      <i class="fa fa-twitch" aria-hidden="true"></i>
+    </a>
+  </div>
+
+  <div class="projects">
+    <h3>Other, and other.</h3>
+    <button onclick="location.href='https://alfreddo.ga/countdown'">
+  <div class="left"></div>
+    Countdown
+  <div class="right"></div>
+    </button>
+    
+    <button onclick="location.href='https://alfreddo.ga/about.html'">
+  <div class="left"></div>
+    About Me
+  <div class="right"></div>
+    </button>
+    
+        <button onclick="location.href='https://alfreddo.ga/canvas'">
+  <div class="left"></div>
+    Canvas
+  <div class="right"></div>
+    </button>
+  </div>
+  
+  
+  <footer>
+    <p class="footerText">Copyright © 2020, All Rights Reserved. - Designed by <a href="https://github.com/kaguwomin">Kaguwo</a> and Re-designed by <a href="https://github.com/alfredsaveron">Alf</a>, created with <a
+        href="https://nextjs.org">Next.JS</a> and <a>❤️</a> Hey remember this is an <a href="https://github.com/KaguwoNetwork/NewKaguwoNetwork">open source</a> project, yes cool!</p>
+  </footer>
+</body>
+
+</html>
+<style>
+html,
+body {
+    margin: 0;
+    padding: 0;
+    color: #e789b9;
+    background: #393156;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    justify-items: center;
+}
+
+/* Media Queries */
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #e789b9;
+        background-color: #393156;
+    }
+
+    a.github {
+        margin-right: 14px;
+        color: #777d88;
+    }
+
+    a.github:hover,  
+    a.github:focus,
+    a.github:active {
+        color: #7289da;
+        border-color: #7289da;
+    }
+
+    a.steam {
+        margin-left: 14px;
+        color: #777d88;
+    }
+
+    a.steam:hover,
+    a.steam:focus,
+    a.steam:active {
+        color: rgba(244, 246, 255, 1);
+        border-color: rgba(244, 246, 255, 1);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) { /* For Mobile Devices */
+    body {
+        font-size: 22px;
+        justify-content: center;
+    }
+
+    div.global {
+        text-align: center;
+        margin: 96px 0;
+    }
+
+    h3.welcome {
+        font-size: 52px;
+    }
+
+    p.details1 {
+        font-size: 24px;
+    }
+
+    p.details2 {
+        font-size: 14px;
+        font-style: italic;
+    }
+
+    div.countdown h1 {
+        font-size: 42px;
+    }
+
+    div.countdown p {
+        font-size: 48px;
+    }
+
+    footer {
+        text-align: center;
+        background: fixed;
+    }
+
+    footer p {
+        font-size: 8px;
+        margin: 35px 0;
+    }   
+}
+
+/* End of Media Queries */
+
+.global {
+    text-align: center;
+    margin: 128px 0;
+}
+
+.animate__pulse {
+    display: inline-block;
+    margin: 20px 0 20px;
+    border-radius: 50%;
+    width: 270px;
+
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    transform: scale(1);
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+
+.welcome {
+    font-size: 64px;
+    margin: 0 0 1px;
+}
+
+.details1 {
+    font-size: 24px;
+}
+
+.details1 a {
+    text-decoration: none;
+    color: #705bef;
+}
+
+.details1 a:hover {
+    color: #705bej;
+}
+
+.details2 {
+    font-size: 16px;
+}
+
+.projects {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.projects h3 {
+    font-size: 32px;
+}
+
+.projects button {
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 2px 4px 14px;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.projects button:hover {
+    background-color: #99AAB5;
+    color: black;
+}
+
+.project-context {
+    background-color: whitesmoke;
+    margin: 0 20px;
+    padding: 30px;
+    border-radius: 6px;
+    transform: translateY(-60px);
+    transition: 0.3s linear;
+}
+
+.project-context a {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    background: fixed;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 25px 0;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #7289da;
+}
+
+footer p a:hover {
+    color: #5a5aff;
+}
+
+.social-medias {
+    position: relative;
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 44px;
+}
+
+.buttons {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+
+
+i {
+   width: 50px;
+   height: 45px;
+   -ms-transition: 0.4s ease-in-out;
+   -webkit-transition: 0.4s ease-in-out;
+   transition: 0.4s ease-in-out;
+}
+
+i:hover {
+    -ms-transform: rotate(360deg); /* IE 9 */
+    -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+    transform: rotate(360deg);
+}
+
+.twitter {
+    margin-right: 14px;
+    color: #705bef;
+}
+
+.twitter:hover,
+.twitter:focus,
+.twitter:active {
+    color: #e789b9;
+    border-color: #e789b9;
+}
+
+.github {
+    margin-right: 14px;
+    color: #777d88;
+}
+
+.github:hover,
+.github:focus,
+.github:active {
+    color: #7289da;
+    border-color: rgba(5, 5, 5, 1);
+}
+
+.yt {
+    color: #705bef;
+}
+
+.yt:hover,
+.yt:focus,
+.yt:active {
+    color: #e789b9;
+    border-color: #e789b9;
+}
+
+.ig {
+    margin-left: 14px;
+    color: #777d88;
+}
+
+.ig:hover,
+.ig:focus,
+.ig:active {
+    color: #7289da;
+    border-color: #c13584;
+}
+
+.steam {
+    margin-left: 14px;
+    color: #7289da;
+}
+
+.steam:hover,
+.steam:focus,
+.steam:active {
+    color: #7289da;
+    border-color: #7289da;
+}
+
+.reddit {
+    margin-left: 14px;
+    color: #705bef;
+}
+
+.reddit:hover {
+    color: #e789b9;
+    border-color: #e789b9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.countdown {
+    text-align: center;
+    margin-top: 230px;
+}
+
+.countdown h1 {
+    font-size: 80px;
+}
+
+.countdown p {
+    font-size: 68px;
+    font-style: oblique;
+}
+
+.footer {
+    margin-top: 50px;
+}
+
+body {
+  width: 100%;
+  overflow: 'hidden';
+}
+
+#canvas {
+  width: 10000%;
+  height: 100%;
+  background: #23272A;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,900');
+
+:root {
+  --text-color: #b651f2;
+  --shadow-color: hsla(210, 40%, 52%, .4);
+  --btn-color: #705bef;
+  --bg-color: #b651f2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+}
+
+button {
+  position:relative;
+  padding: 10px 20px;  
+  border: none;
+  background: none;
+  cursor: pointer;
+  
+  font-family: "Source Code Pro";
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 30px;  
+  color: var(--text-color);
+  
+  background-color: var(--btn-color);
+  box-shadow: var(--shadow-color) 2px 2px 22px;
+  border-radius: 4px; 
+  z-index: 0;  
+  overflow: hidden;   
+}
+
+button:focus {
+  outline-color: transparent;
+  box-shadow: var(--btn-color) 2px 2px 22px;
+}
+
+.right::after, button::after {
+  content: var(--content);
+  display: block;
+  position: absolute;
+  white-space: nowrap;
+  padding: 40px 40px;
+  pointer-events:none;
+}
+
+button::after{
+  font-weight: 200;
+  top: -30px;
+  left: -20px;
+} 
+
+.right, .left {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.right {
+  left: 66%;
+}
+.left {
+  right: 66%;
+}
+.right::after {
+  top: -30px;
+  left: calc(-66% - 20px);
+  
+  background-color: var(--bg-color);
+  color:transparent;
+  transition: transform .4s ease-out;
+  transform: translate(0, -90%) rotate(0deg)
+}
+
+button:hover .right::after {
+  transform: translate(0, -47%) rotate(0deg)
+}
+
+button .right:hover::after {
+  transform: translate(0, -50%) rotate(-7deg)
+}
+
+button .left:hover ~ .right::after {
+  transform: translate(0, -50%) rotate(7deg)
+}
+
+/* bubbles */
+button::before {
+  content: '';
+  pointer-events: none;
+  opacity: .6;
+  background:
+    radial-gradient(circle at 20% 35%,  transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+    radial-gradient(circle at 75% 44%, transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+    radial-gradient(circle at 46% 52%, transparent 0, transparent 4px, var(--text-color) 5px, var(--text-color) 6px, transparent 6px);
+
+  width: 100%;
+  height: 300%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: bubbles 5s linear infinite both;
+}
+
+@keyframes bubbles {
+  from {
+    transform: translate();
+  }
+  to {
+    transform: translate(0, -66.666%);
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #393156;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cb7eb9;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #705bef;
+}
+</style>
