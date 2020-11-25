@@ -1,4 +1,6 @@
-# Ey! Welcome to my Portfolio.
+# New Kaguwo Network
+
+<img src="https://alfred.is-inside.me/frzD9CCh.png">
 
 # Welcome to our new Network and yes Re-designed!
 
