@@ -106,3 +106,5 @@ function splitLetters(word) {
 
 changeWord();
 setInterval(changeWord, 4000);
+changeWord();
+setInterval(changeWord, 4000);
