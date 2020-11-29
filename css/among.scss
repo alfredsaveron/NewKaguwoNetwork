@@ -1,0 +1,232 @@
+$player: ".c-player";
+$color: ".c-color";
+$palette: ".c-palette";
+$custom: ".c-custom";
+
+html,
+body {
+ height: 100vh;
+ width: 100vw;
+ overflow: hidden;
+
+ padding: 0;
+ margin: 0;
+
+ background: #{$field-background};
+
+ box-shadow: inset 0 0 0 5px #101818, inset 0 0 0 15px #293031,
+  inset 0 0 0 20px #101818, inset 0 80px 0 0 #548491, inset 0 140px 0 0 #89445a,
+  inset 0 145px 0 0 #181c21;
+
+ // TODO: Convert svg background to linear gradient composition
+
+ &:before {
+  content: "";
+  position: absolute;
+  width: calc(100% - 150px);
+  height: 90px;
+  top: 30px;
+  left: 50%;
+  transform: translatex(-50%);
+  background: linear-gradient(
+    to right,
+    transparent 0 12px,
+    #101818 12px 15px,
+    #31494a 15px 18px,
+    #101818 18px 21px,
+    transparent 21px 100%
+   ),
+   linear-gradient(to bottom, #a4cce6 0% 75%, #6392ad 75% 100%);
+
+  background-position: center center, left top;
+  background-size: 145px 6px, 100% 100%;
+
+  box-shadow: inset 0 0 0 5px #31494a, inset 0 0 0 10px #101818;
+  border: 5px solid #101818;
+ }
+}
+
+#{$player} {
+ --x: 0;
+ --y: 0;
+ --sprite-idle: #{$player-background} no-repeat center bottom;
+ --sprite-walking: #{$player-walking-background} no-repeat center bottom;
+ --sprite-hat: #{$player-hat} no-repeat 12px 35px;
+ position: relative;
+ width: 85px;
+ height: 150px;
+ transform: translate(var(--x), var(--y));
+ transition: opacity .3s ease-in-out;
+
+ &:before,
+ &:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: block;
+ }
+
+ &:before {
+  background: var(--sprite-idle);
+ }
+
+ &:after {
+  background: var(--sprite-hat);
+ }
+
+ &--walking:before {
+  background: var(--sprite-walking);
+  animation: PlayerWalking 0.8s steps(12) infinite;
+ }
+
+ &--walking:after {
+  animation: HatWalking 0.8s step-start infinite;
+ }
+
+ &--turn-left {
+  &:before,
+  &:after {
+   transform: scalex(-1);
+  }
+ }
+
+ &--hide {
+  opacity: 0;
+ }
+}
+
+@keyframes PlayerWalking {
+ from {
+  background-position-x: 0px;
+ }
+ to {
+  background-position-x: -1020px;
+ }
+}
+
+@keyframes HatWalking {
+ 0%,
+ 100% {
+  background-position: 12px 30px;
+ }
+
+ 25%,
+ 75% {
+  background-position: 12px 25px;
+ }
+
+ 50% {
+  background-position: 12px 30px;
+ }
+}
+
+#{$color} {
+ --base: var(--color-cyan-base);
+ --shadow: var(--color-cyan-shadow);
+ height: 2rem;
+ width: 2rem;
+ border: 3px solid #000;
+ border-radius: 8px;
+ display: block;
+ overflow: hidden;
+ position: relative;
+
+ &:after,
+ &:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  height: calc(100% + 8px);
+  width: calc(100% + 8px);
+  border-radius: 16px;
+  cursor: pointer;
+ }
+
+ &:after {
+  background-color: var(--base);
+  transform: translatey(-32.5%);
+ }
+
+ &:before {
+  background-color: var(--shadow);
+ }
+
+ &__input {
+  width: 0;
+  height: 0;
+ }
+
+ &--red {
+  --base: #f31717;
+  --shadow: #880934;
+ }
+ &--orange {
+  --base: #f07d0d;
+  --shadow: #b43e15;
+ }
+ &--brown {
+  --base: #71491e;
+  --shadow: #5e2615;
+ }
+ &--yellow {
+  --base: #fbfb59;
+  --shadow: #c38822;
+ }
+ &--lime {
+  --base: #50f039;
+  --shadow: #15a842;
+ }
+ &--green {
+  --base: #11802d;
+  --shadow: #0a4d2e;
+ }
+ &--cyan {
+  --base: #38ffdd;
+  --shadow: #24a9bf;
+ }
+ &--blue {
+  --base: #132ed1;
+  --shadow: #09158e;
+ }
+ &--pink {
+  --base: #ee54bb;
+  --shadow: #ac2bae;
+ }
+ &--purple {
+  --base: #6b2fbc;
+  --shadow: #3b177c;
+ }
+ &--black {
+  --base: #3f474e;
+  --shadow: #1e1f26;
+ }
+ &--white {
+  --base: #d7e1f1;
+  --shadow: #8495c0;
+ }
+}
+
+#{$palette} {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+ display: grid;
+ grid-template: auto / 1fr 1fr;
+ gap: .5rem;
+}
+
+
+#{$custom} {
+ position: fixed;
+ top: 50%;
+ left: 15px;
+ transform: translatey(-50%);
+ background-color: #293031;
+ border: 5px solid #101818;
+ border-left: 0;
+ padding: .5rem;
+ border-radius: 0 4px 4px 0;
+}
