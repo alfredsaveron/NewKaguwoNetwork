@@ -19,14 +19,14 @@ body {
 
     a.github {
         margin-right: 14px;
-        color: #a8edea;
+        color: #fed6e3;
     }
 
     a.github:hover,  
     a.github:focus,
     a.github:active {
         color: #a8edea;
-        border-color: ##a8edea;
+        border-color: #a8edea;
     }
 
     a.steam {
