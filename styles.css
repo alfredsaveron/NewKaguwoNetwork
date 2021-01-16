@@ -2,8 +2,8 @@ html,
 body {
     margin: 0;
     padding: 0;
-    color: #99AAB5;
-    background: #23272A;
+    color: #a8edea;
+    background: #242424;
     font-family: 'Roboto', sans-serif;
     align-items: center;
     justify-items: center;
@@ -13,8 +13,8 @@ body {
 
 @media (prefers-color-scheme: dark) {
     body {
-        color: #99AAB5;
-        background-color: #23272A;
+        color: #a8edea;
+        background-color: #242424;
     }
 
     a.github {
