@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Inconsolata);
 html,
 body {
-  background-image: url('https://alfred.is-inside.me/gCeXahxc.png');
+  background: #242424;
   font-family: 'Inconsolata', sans-serif;
 }
 .wrap {
@@ -17,11 +17,11 @@ code {
   color: white;
 }
 span.blue {
-  color: #48beef;
+  color: #fed6e3;
 }
 span.comment {
   color: #7f8c8d;
 }
 span.load {
-  color: #f39c12;
+  color: #a8edea;
 }
