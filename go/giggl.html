@@ -2,10 +2,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Redirect Page,cool!</title>
+  <title>Redirect to giggl.app!</title>
 
   <link rel="icon" href="https://cdn.discordapp.com/emojis/780988312172101682.png?v=1" />
 </head>
-<a href="https://alfreddo.ga" class="button">Back</a>
-		<a href="https://giggl.app/?utm_source=alfreddo.ga" class="button gray" class="gray">Giggl.app</a>
+<p>You will be redirected in <time><strong id="seconds">5</strong> seconds</time>, let's go! • <strong>giggl.app</strong></p>
 <link rel="stylesheet" href="/go/go.css">
+<script>
+var el = document.getElementById('seconds'),
+    total = el.innerHTML,
+    timeinterval = setInterval(function () {
+        total = --total;
+        el.textContent = total;
+        if (total <= 0) {
+            clearInterval(timeinterval);
+            
+window.location = '//giggl.app';
+        }
+    }, 1000);
+</script>
+
