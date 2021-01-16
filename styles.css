@@ -139,11 +139,11 @@ body {
 
 .details1 a {
     text-decoration: none;
-    color: #7289da;
+    color: #fed6e3;
 }
 
 .details1 a:hover {
-    color: #777d89;
+    color: #a8edea;
 }
 
 .details2 {
@@ -206,11 +206,11 @@ footer p {
 
 footer p a {
     text-decoration: none;
-    color: #7289da;
+    color: #fed6e3;
 }
 
 footer p a:hover {
-    color: #5a5aff;
+    color: #a8edea;
 }
 
 .social-medias {
@@ -244,71 +244,71 @@ i:hover {
 
 .twitter {
     margin-right: 14px;
-    color: ##fed6e3;
+    color: #fed6e3;
 }
 
 .twitter:hover,
 .twitter:focus,
 .twitter:active {
-    color: ##a8edea;
-    border-color: ##a8edea;
+    color: #a8edea;
+    border-color: #a8edea;
 }
 
 .github {
     margin-right: 14px;
-    color: ##fed6e3;
+    color: #fed6e3;
 }
 
 .github:hover,
 .github:focus,
 .github:active {
-    color: ##a8edea;
-    border-color: ##a8edea;
+    color: #a8edea;
+    border-color: #a8edea;
 }
 
 .yt {
-    color: ##fed6e3;
+    color: #fed6e3;
 }
 
 .yt:hover,
 .yt:focus,
 .yt:active {
-    color: ##a8edea;
-    border-color: ##a8edea;
+    color: #a8edea;
+    border-color: #a8edea;
 }
 
 .ig {
     margin-left: 14px;
-    color: ##fed6e3;
+    color: #fed6e3;
 }
 
 .ig:hover,
 .ig:focus,
 .ig:active {
-    color: ##a8edea;
-    border-color: ##a8edea;
+    color: #a8edea;
+    border-color: #a8edea;
 }
 
 .steam {
     margin-left: 14px;
-    color: ##fed6e3;
+    color: #fed6e3;
 }
 
 .steam:hover,
 .steam:focus,
 .steam:active {
-    color: ##a8edea;
-    border-color: ##a8edea;
+    color: #a8edea;
+    border-color: #a8edea;
 }
 
 .reddit {
     margin-left: 14px;
-    color: ##fed6e3;
+    color: #fed6e3;
 }
 
 .reddit:hover {
-    color: ##a8edea;
-    border-color: ##a8edea;
+    color: #a8edea;
+    border-color: #a8edea;
 }
 
 * {
@@ -341,7 +341,7 @@ body {
 #canvas {
   width: 10000%;
   height: 100%;
-  background: #23272A;
+  background: #242424;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,900');
@@ -349,7 +349,7 @@ body {
 :root {
   --text-color: hsla(210, 50%, 85%, 1);
   --shadow-color: hsla(210, 40%, 52%, .4);
-  --btn-color: ##fed6e3;
+  --btn-color: #fed6e3;
   --bg-color: #141218;
 }
 
@@ -479,10 +479,10 @@ button::before {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: ##fed6e3;
+  background: #fed6e3;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: ##a8edea;
+  background: #a8edea;
 }
