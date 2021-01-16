@@ -25,13 +25,13 @@ body {
     a.github:hover,  
     a.github:focus,
     a.github:active {
-        color: ##a8edea;
+        color: #a8edea;
         border-color: ##a8edea;
     }
 
     a.steam {
         margin-left: 14px;
-        color: ##a8edea;
+        color: #a8edea;
     }
 
     a.steam:hover,
