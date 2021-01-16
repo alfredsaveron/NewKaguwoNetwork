@@ -1,0 +1,32 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
+
+body {
+  background-color: #242424;
+  font-size: 30px;
+  font-family: 'Montserrat', Helvetica Neue, Helvetica, sans-serif;
+}
+
+p {
+  text-align: center;
+  margin: 7em;
+  color: #fed6e3;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #242424;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #242424;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #242424;
+}
