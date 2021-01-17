@@ -471,3 +471,14 @@ img{
 ::-webkit-scrollbar-thumb:hover {
   background: #99AAB5;
 }
+
+.animate__pulse {
+    display: inline-block;
+    margin: 20px 0 20px;
+    border-radius: 50%;
+    width: 270px;
+
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    transform: scale(1);
+    animation: pulse 1.5s infinite;
+}
