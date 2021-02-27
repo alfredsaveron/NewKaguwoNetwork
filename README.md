@@ -1,8 +1,7 @@
-<p align="center"><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/271/technologist-light-skin-tone_1f9d1-1f3fb-200d-1f4bb.png"></p>
+<p align="center"><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/271/elf_light-skin-tone_1f9dd-1f3fb_1f3fb.png"></p>
 
-# Welcome to our new Network and yes Re-designed.
-
-Now with a dark theme, Kaguwo's ​​Network hosts many new features!
+<h1 align="center">Alf's Portfolio</h1>
+<h4 align="center">I'm still trying to learn Front-end. And yes; still trying to use the frameworks I've learned in my new projects, it's _really_ cool! 🚀</h4>
 
 # New Features!
 
