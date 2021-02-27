@@ -29,5 +29,5 @@ I would like to thanks <a href="https://github.com/kaguwo">Kaguwo</a> (Huseyin) 
 <h1 align="center">Other Links?!</h1>
 <h4 align="center"> <a href="https://github.com/AestasFlores">Aestas Flores</a> — <a href="https://alfreddo.ga">Portfolio</a></h4>
 <p align="center">
-  <a href="https://discordextremelist.xyz"><img alt="Discord Extreme List" src="https://img.shields.io/badge/DiscordExtremeList-7289DA?style=for-the-badge&logo=discord&logoColor=white"/></a>
+  <a href="https://discordextremelist.xyz"><img alt="Discord Extreme List" src="https://img.shields.io/badge/Discord_Extreme_List-7289DA?style=for-the-badge&logo=discord&logoColor=white"/></a>
 </p>
