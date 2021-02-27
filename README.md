@@ -9,15 +9,9 @@
   <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
 </p>
 
-## New Features!
-
-- Custom Scrollbar
-- Custom Media Icons Color
-- Custom and new CSS Buttons
-- New Network Pages
-- New Colors , yeah so cool!
-- New Footer 
-- New Icons and New <code>style.css</code>!
+## What's Alf's Portfolio?
+I wanted to create a simple Landing Page and a portfolio individually. In this way, Alf's Portfolio was created! 
+I work day by day to make new features and improvements. I am trying to make it a completely different project from Old Network.
 
 ## What awaits us with these features?
 
