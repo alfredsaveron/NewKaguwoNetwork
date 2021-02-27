@@ -11,7 +11,7 @@
 
 ## What's Alf's Portfolio?
 I wanted to create a simple Landing Page and a portfolio individually. In this way, Alf's Portfolio was created! 
-I work day by day to make new features and improvements. I am trying to make it a completely different project from Old Network.
+I work day by day to make new features and improvements. I am trying to make it a completely different project from AestasFlores/Old Network.
 
 ## What awaits us with these features?
 
