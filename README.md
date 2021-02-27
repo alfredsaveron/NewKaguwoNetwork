@@ -13,20 +13,11 @@
 I wanted to create a simple Landing Page and a portfolio individually. In this way, Alf's Portfolio was created! 
 I work day by day to make new features and improvements. I am trying to make it a completely different project from AestasFlores/Old Network.
 
-## What awaits us with these features?
+## To-do List?
+*Last Update: 02.27.21 (USA)*
 
-- Lines of code that make it work more stable and faster now!
-- Customizable background and text colors!
-- New Developer Easter Eggs , sssh!
-- New and customizable plugins and web pages!
-- Cool Social Media Icons!
-- New CSS Animations!
+- [ ] Page icons will be changed.
+- [ ] Game pages will be improved.
 
-## Copyrights
-
-Copyright © 2020, All Rights Reserved. - Designed by Kaguwo and Re-designed by <a href="https://github.com/alfredsaveron"> Alf</a> , created with Next.JS and ❤️
-
-## Thanks
-
-- Kaguwo ( Website's Main Developer and Owner )
-- Alf ( Website's Second Developer )
+## Thanks!
+I would like to thanks <a href="https://github.com/kaguwo">Kaguwo</a> (Huseyin) for supporting me and managing our <a href="https://github.com/AestasFlores">team</a>.
