@@ -22,7 +22,7 @@ I work day by day to make new features and improvements. I am trying to make it 
 ## Thanks!
 I would like to thanks <a href="https://github.com/kaguwo">Kaguwo</a> (Huseyin) for supporting me and managing our <a href="https://github.com/AestasFlores">team</a>.
 
-<p align="center"><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/271/person-juggling_light-skin-tone_1f939-1f3fb_1f3fb.png"></p>
+<p align="center"><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/271/party-popper_1f389.png"></p>
 
 <h1 align="center">Other Links?!</h1>
 <h4 align="center"> <a href="https://github.com/AestasFlores">Aestas Flores</a> — <a href="https://alfreddo.ga">Portfolio</a></h4>
