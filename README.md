@@ -1,7 +1,7 @@
 <p align="center"><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/271/elf_light-skin-tone_1f9dd-1f3fb_1f3fb.png"></p>
 
 <h1 align="center">Alf's Portfolio</h1>
-<h4 align="center">I'm still trying to learn Front-end. And yes; still trying to use the frameworks I've learned in my new projects, it's _really_ cool! 🚀</h4>
+<h4 align="center">While this project is being done; HTML, CSS, SCSS and JavaScript used.</h4>
 
 # New Features!
 
