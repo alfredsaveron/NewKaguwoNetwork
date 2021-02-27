@@ -1,4 +1,4 @@
-<p align="center"><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/271/elf_light-skin-tone_1f9dd-1f3fb_1f3fb.png"></p>
+<p align="center"><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/271/snowboarder_1f3c2.png"></p>
 
 <h1 align="center">Alf's Portfolio</h1>
 <h4 align="center">While this project is being done; HTML, CSS, SCSS and JavaScript used.</h4>
