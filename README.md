@@ -22,7 +22,7 @@ I work day by day to make new features and improvements. I am trying to make it 
 ## Thanks!
 I would like to thanks <a href="https://github.com/kaguwo">Kaguwo</a> (Huseyin) for supporting me and managing our <a href="https://github.com/AestasFlores">team</a>.
 
-<hr></hr>
+##
 
 <p align="center"><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/72/apple/271/party-popper_1f389.png"></p>
 
