@@ -1,4 +1,4 @@
-<img src="https://alfred.is-inside.me/frzD9CCh.png">
+<p align="center"><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/271/technologist-light-skin-tone_1f9d1-1f3fb-200d-1f4bb.png"></p>
 
 # Welcome to our new Network and yes Re-designed.
 
