@@ -3,7 +3,7 @@
 <h1 align="center">Alf's Portfolio</h1>
 <h4 align="center">While this project is being done; HTML, CSS, SCSS and JavaScript used.</h4>
 
-# New Features!
+## New Features!
 
 - Custom Scrollbar
 - Custom Media Icons Color
@@ -13,7 +13,7 @@
 - New Footer 
 - New Icons and New <code>style.css</code>!
 
-# What awaits us with these features?
+## What awaits us with these features?
 
 - Lines of code that make it work more stable and faster now!
 - Customizable background and text colors!
@@ -22,11 +22,11 @@
 - Cool Social Media Icons!
 - New CSS Animations!
 
-# Copyrights
+## Copyrights
 
 Copyright © 2020, All Rights Reserved. - Designed by Kaguwo and Re-designed by <a href="https://github.com/alfredsaveron"> Alf</a> , created with Next.JS and ❤️
 
-# Thanks
+## Thanks
 
 - Kaguwo ( Website's Main Developer and Owner )
 - Alf ( Website's Second Developer )
