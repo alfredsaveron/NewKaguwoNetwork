@@ -16,7 +16,7 @@ I work day by day to make new features and improvements. I am trying to make it 
 ## To-do List?
 *Last Update: 02.27.21 (USA)*
 
-- [ . ] Page icons will be changed.
+- [ ] Page icons will be changed.
 - [ ] Game pages will be improved.
 
 ## Thanks!
