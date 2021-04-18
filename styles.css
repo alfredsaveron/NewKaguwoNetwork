@@ -486,3 +486,15 @@ button::before {
 ::-webkit-scrollbar-thumb:hover {
   background: #a8edea;
 }
+
+.m-red {background:#a8edea; color:#242424; text-decoration:none;}
+
+.m-bar {width:85%; min-width:600px; max-width:1200px; height:55px; display:inline-block; margin-top:20px; text-align:left;}
+
+.m-bar a.m-close {float:right; display:inline-block; color:#242424; text-decoration:none; overflow:hidden; margin-right:10px;}
+
+.m-bar a.m-close i {margin-top:15px;}
+
+.m-bar a.m-microphone {float:left;  margin-top:15px; margin-left:10px; cursor:default;}
+
+.m-bar a.m-content {font-size:13.5px; font-family:"Noto Sans", sans-serif; margin-left:5px; line-height:54px; display:inline-block;}
