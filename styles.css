@@ -2,7 +2,7 @@ html,
 body {
     margin: 0;
     padding: 0;
-    color: #a8edea;
+    color: #7289da;
     background: #242424;
     font-family: 'Roboto', sans-serif;
     align-items: center;
@@ -13,7 +13,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
     body {
-        color: #a8edea;
+        color: #7289da;
         background-color: #242424;
     }
 
@@ -25,13 +25,13 @@ body {
     a.github:hover,  
     a.github:focus,
     a.github:active {
-        color: #a8edea;
-        border-color: #a8edea;
+        color: #7289da;
+        border-color: #7289da;
     }
 
     a.steam {
         margin-left: 14px;
-        color: #a8edea;
+        color: #7289da;
     }
 
     a.steam:hover,
@@ -143,7 +143,7 @@ body {
 }
 
 .details1 a:hover {
-    color: #a8edea;
+    color: #7289da;
 }
 
 .details2 {
@@ -210,7 +210,7 @@ footer p a {
 }
 
 footer p a:hover {
-    color: #a8edea;
+    color: #7289da;
 }
 
 .social-medias {
@@ -250,8 +250,8 @@ i:hover {
 .twitter:hover,
 .twitter:focus,
 .twitter:active {
-    color: #a8edea;
-    border-color: #a8edea;
+    color: #7289da;
+    border-color: #7289da;
 }
 
 .github {
@@ -262,8 +262,8 @@ i:hover {
 .github:hover,
 .github:focus,
 .github:active {
-    color: #a8edea;
-    border-color: #a8edea;
+    color: #7289da;
+    border-color: #7289da;
 }
 
 .yt {
@@ -297,8 +297,8 @@ i:hover {
 .steam:hover,
 .steam:focus,
 .steam:active {
-    color: #a8edea;
-    border-color: #a8edea;
+    color: #7289da;
+    border-color: #7289da;
 }
 
 .reddit {
@@ -307,8 +307,8 @@ i:hover {
 }
 
 .reddit:hover {
-    color: #a8edea;
-    border-color: #a8edea;
+    color: #7289da;
+    border-color: #7289da;
 }
 
 * {
@@ -484,17 +484,5 @@ button::before {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #a8edea;
+  background: #7289da;
 }
-
-.m-red {background:#a8edea; color:#242424; text-decoration:none;}
-
-.m-bar {width:85%; min-width:600px; max-width:1200px; height:55px; display:inline-block; margin-top:20px; text-align:left;}
-
-.m-bar a.m-close {float:right; display:inline-block; color:#242424; text-decoration:none; overflow:hidden; margin-right:10px;}
-
-.m-bar a.m-close i {margin-top:15px;}
-
-.m-bar a.m-microphone {float:left;  margin-top:15px; margin-left:10px; cursor:default;}
-
-.m-bar a.m-content {font-size:13.5px; font-family:"Noto Sans", sans-serif; margin-left:5px; line-height:54px; display:inline-block;}
