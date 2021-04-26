@@ -2,7 +2,7 @@ html,
 body {
     margin: 0;
     padding: 0;
-    color: #7289da;
+    color: white;
     background: #242424;
     font-family: 'Roboto', sans-serif;
     align-items: center;
@@ -13,7 +13,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
     body {
-        color: #7289da;
+        color: white;
         background-color: #242424;
     }
 
@@ -25,13 +25,13 @@ body {
     a.github:hover,  
     a.github:focus,
     a.github:active {
-        color: #7289da;
-        border-color: #7289da;
+        color: white;
+        border-color: white;
     }
 
     a.steam {
         margin-left: 14px;
-        color: #7289da;
+        color: white;
     }
 
     a.steam:hover,
@@ -143,7 +143,7 @@ body {
 }
 
 .details1 a:hover {
-    color: #7289da;
+    color: white;
 }
 
 .details2 {
@@ -210,7 +210,7 @@ footer p a {
 }
 
 footer p a:hover {
-    color: #7289da;
+    color: white;
 }
 
 .social-medias {
@@ -250,8 +250,8 @@ i:hover {
 .twitter:hover,
 .twitter:focus,
 .twitter:active {
-    color: #7289da;
-    border-color: #7289da;
+    color: white;
+    border-color: white;
 }
 
 .github {
@@ -262,8 +262,8 @@ i:hover {
 .github:hover,
 .github:focus,
 .github:active {
-    color: #7289da;
-    border-color: #7289da;
+    color: white;
+    border-color: white;
 }
 
 .yt {
@@ -297,8 +297,8 @@ i:hover {
 .steam:hover,
 .steam:focus,
 .steam:active {
-    color: #7289da;
-    border-color: #7289da;
+    color: white;
+    border-color: white;
 }
 
 .reddit {
@@ -307,8 +307,8 @@ i:hover {
 }
 
 .reddit:hover {
-    color: #7289da;
-    border-color: #7289da;
+    color: white;
+    border-color: white;
 }
 
 * {
@@ -349,7 +349,7 @@ body {
 :root {
   --text-color: hsla(210, 50%, 85%, 1);
   --shadow-color: hsla(210, 40%, 52%, .4);
-  --btn-color: #fed6e3;
+  --btn-color: #9d8aa8;
   --bg-color: #141218;
 }
 
@@ -484,5 +484,5 @@ button::before {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #7289da;
+  background: white;
 }
