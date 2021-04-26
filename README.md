@@ -19,12 +19,3 @@ You can view a live and public version of my site at [alfreddo.ga](https://alfre
 
 - [ ] Page icons will be changed.
 - [ ] Game pages will be improved.
-
-##
-
-<p align="center"><img src="https://habbofont.net/font/straypixels/other+links.gif"></p>
-
-<h4 align="center"> <a href="https://github.com/AestasFlores">Aestas Flores</a> — <a href="https://alfreddo.ga">Portfolio</a></h4>
-<p align="center">
-  <a href="https://discordextremelist.xyz"><img alt="Discord Extreme List" src="https://img.shields.io/badge/Discord_Extreme_List-7289DA?style=for-the-badge&logo=discord&logoColor=white"/></a>
-</p>
