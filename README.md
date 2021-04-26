@@ -7,21 +7,18 @@
   <img alt="Next JS" src="https://img.shields.io/badge/nextjs-%23000000.svg?&style=for-the-badge&logo=next.js&logoColor=white"/
 </p>
 
-## ✨ What's "Old Personal Website"?
+## ✨ What's this?
 I wanted to create a simple Landing Page and a portfolio individually. In this way, Alf's Portfolio was created! 
 I work day by day to make new features and improvements. I am trying to make it a completely different project from AestasFlores/Old Network.
 
 ## 🔎 Live version.
 You can view a live and public version of my site at [alfreddo.ga](https://alfreddo.ga)
 
-## To-do List?
+## 💡 Todo
 *Last Update: 02.27.21 (USA)*
 
 - [ ] Page icons will be changed.
 - [ ] Game pages will be improved.
-
-## Thanks!
-I would like to thanks <a href="https://github.com/kaguwo">Kaguwo</a> (Huseyin) for supporting me and managing our <a href="https://github.com/AestasFlores">team</a>.
 
 ##
 
