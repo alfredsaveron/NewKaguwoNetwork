@@ -19,7 +19,7 @@ body {
 
     a.github {
         margin-right: 14px;
-        color: #fed6e3;
+        color: #9d8ac7;
     }
 
     a.github:hover,  
@@ -139,7 +139,7 @@ body {
 
 .details1 a {
     text-decoration: none;
-    color: #fed6e3;
+    color: #9d8ac7;
 }
 
 .details1 a:hover {
@@ -206,7 +206,7 @@ footer p {
 
 footer p a {
     text-decoration: none;
-    color: #fed6e3;
+    color: #9d8ac7;
 }
 
 footer p a:hover {
@@ -244,7 +244,7 @@ i:hover {
 
 .twitter {
     margin-right: 14px;
-    color: #fed6e3;
+    color: #9d8ac7;
 }
 
 .twitter:hover,
@@ -256,7 +256,7 @@ i:hover {
 
 .github {
     margin-right: 14px;
-    color: #fed6e3;
+    color: #9d8ac7;
 }
 
 .github:hover,
@@ -267,7 +267,7 @@ i:hover {
 }
 
 .yt {
-    color: #fed6e3;
+    color: #9d8ac7;
 }
 
 .yt:hover,
@@ -279,7 +279,7 @@ i:hover {
 
 .ig {
     margin-left: 14px;
-    color: #fed6e3;
+    color: #9d8ac7;
 }
 
 .ig:hover,
@@ -291,7 +291,7 @@ i:hover {
 
 .steam {
     margin-left: 14px;
-    color: #fed6e3;
+    color: #9d8ac7;
 }
 
 .steam:hover,
@@ -303,7 +303,7 @@ i:hover {
 
 .reddit {
     margin-left: 14px;
-    color: #fed6e3;
+    color: #9d8ac7;
 }
 
 .reddit:hover {
@@ -479,7 +479,7 @@ button::before {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #fed6e3;
+  background: #9d8ac7;
 }
 
 /* Handle on hover */
