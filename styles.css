@@ -467,22 +467,19 @@ button::before {
   }
 }
 
+  
 /* width */
 ::-webkit-scrollbar {
-  width: 2px;
+  width: 10px;
 }
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #242424;
-}
-
+ 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #9d8ac7;
+  background: #9d8aa8; 
+  border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: white;
+  background: #9d8aa7; 
 }
