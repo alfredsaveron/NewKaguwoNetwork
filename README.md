@@ -12,7 +12,7 @@ I wanted to create a simple Landing Page and a portfolio individually. In this w
 I work day by day to make new features and improvements. I am trying to make it a completely different project from AestasFlores/Old Network.
 
 ## 🔎 Live version.
-You can view a live and public version of my site at [alfreddo.ga](https://alfreddo.ga)
+You can view a live and public version of my site at [alfreddo.ga](https://alfreddo.ga)!
 
 ## 💡 Todo
 *Last Update: 02.27.21 (USA)*
